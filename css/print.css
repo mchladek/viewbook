@@ -1,0 +1,50 @@
+body {
+	width=80%;
+}
+
+p {
+	font-size: 12pt;
+	line-height: 150%;
+	margin-bottom: .5em;
+}
+
+ol li, ul li {
+	font-size: 12pt;
+}
+
+table {
+	font-size: 12pt;
+}
+
+tr, th, td {
+	font-size: 12pt;
+}
+
+figcaption {
+	font-size: 12pt;
+}
+
+h1.chaptertitle {
+	font-size: 16pt;
+}
+
+h2.chaptersubtitle {
+	font-size: 14pt;
+}
+
+.author, .editor {
+	font-size: 14pt;
+}
+
+.partitle {
+	font-size: 16pt;
+}
+
+h1.head1, h2.head2, h3.head3 {
+	font-size: 12pt;
+}
+
+.footnote > p{
+	font-size: 10pt;
+	line-height: 125%;
+}

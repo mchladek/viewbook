@@ -1,0 +1,423 @@
+/* Add top margin to article container to make room for navbar */
+.container {
+	margin-top: 75px;
+}
+
+@media (max-width: 480px) {
+article {
+	margin-left: 0;
+	margin-right: 0;
+}
+}
+
+@media (max-width: 768px) {
+article {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+}
+
+@media (min-width: 768px) {
+article{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+}
+
+/* Change navbar background color */
+.navbar-default {
+	background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Match navbar and link colors with those on HAU Books homepage */
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #D30700;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover {
+	background-color: #CD372B;
+}
+
+a {
+	color: #D30700;
+}
+
+a:hover {
+	color: #CD372B;
+	text-decoration: none;
+}
+
+/* Make navbar-justify center align instead but only on larger screen to ensure collapsed menu stays left aligned
+@media (min-width: 768px){
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+
+.navbar-nav li {
+	float: none;
+	display: inline-block;
+}
+
+.dropdown-menu li{
+	display: block;
+}
+}
+*/
+
+/* Add space for when a next/prev button is not necessary */
+.blank_nav {
+	width: 150px;
+	height: 1px;
+}
+
+/* Edit typography */
+body {
+	font-family: Baskerville, "Baskerville Old Face", "Libre Baskerville", serif;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: 'kern=1';
+	-moz-font-feature-settings: 'kern' 1;
+	-webkit-font-feature-settings: 'kern' 1;
+	-o-font-feature-settings: 'kern' 1;
+	-ms-font-feature-settings: 'kern' 1;
+	font-feature-settings: 'kern' 1;
+
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: 'liga=1';
+	-moz-font-feature-settings: 'liga' 1;
+	-webkit-font-feature-settings: 'liga' 1;
+	-o-font-feature-settings: 'liga' 1;
+	-ms-font-feature-settings: 'liga' 1;
+	font-feature-settings: 'liga' 1;
+}
+
+.navbar li {
+	font-family: "Gill Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 16px;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+p.caption {
+	text-align: center;
+}
+
+ol, ul {
+	margin-bottom: 2em;
+	padding-right: 25px;
+}
+
+.refText {
+	margin-left: 2.5em;
+	text-indent: -2.5em;
+}
+
+.footnote > p{
+	text-indent: 0;
+}
+
+.attribution {
+	text-align: right;
+}
+
+.attribution1 {
+	margin-left: 50%;
+}
+
+.attribution2 {
+	text-align: right;
+	margin-left: 50%;
+}
+
+.hanglist, .note {
+	margin-left: 15px;
+	text-indent: -15px;
+}
+
+.abpara {
+	margin: 10px 10px 10px 10px;
+}
+
+#abst01 {
+	border-bottom: solid 2px gray;
+	border-top: solid 1px gray;
+}
+
+.doi {
+	text-align: right;
+	font-size: 9pt;
+	color: rgb(195, 195, 195);
+}
+
+.resume {
+	font-weight: bold;
+}
+
+.empty {
+	border-bottom: solid 1px gray;
+}
+
+.partitle {
+	font-weight: normal;
+}
+
+/* Center fm and title in front matter */
+.fm {
+	text-align: center;
+}
+
+.fronttitle {
+	text-align: center;
+}
+
+.frontsubtitle {
+	text-align: center;
+}
+
+/* Table */
+table {
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 100%;
+	padding: 10px;
+}
+td {
+	padding: 2px 1px 2px 50px;
+}
+th {
+	padding: 2px 5px 2px 50px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid black;
+}
+
+/* Figure */
+figure {
+	border: none;
+	background: transparent;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+figcaption {
+	text-align: center;
+}
+
+/* Responsive Elements */
+@media (max-width: 480px){
+p {
+	font-size: 14pt;
+	text-align: left;
+}
+p.caption {
+	font-size: 12pt;
+}
+.footnote > p {
+	font-size: 12pt;
+}
+.author, .editor {
+	font-size: 15pt;
+}
+ol li, ul li {
+	font-size: 14pt;
+	text-align: left;
+}
+figcaption {
+	font-size: 12pt;
+}
+td, th {
+        font-size: 14pt;
+}
+h1.chaptertitle {
+	font-size: 16pt;
+	font-weight: bold;
+}
+h1.chaptersubtitle {
+	font-size: 15pt;
+	font-weight: bold;
+}
+h1.head1 {
+        font-size: 14pt;
+        font-weight: bold;
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+h2.head2 {
+        font-size: 14pt;
+        font-weight: bold;
+        font-variant: italic;
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+h3.head3 {
+        font-size: 14pt;
+        font-weight: normal;
+        font-variant: italic;
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+}
+
+@media (min-width: 480px){
+p {
+	font-size: 16pt;
+	text-align: justify;
+}
+p.caption {
+	font-size: 14pt;
+}
+.author, .editor {
+	font-size: 17pt;
+}
+.footnote > p {
+	font-size: 14pt;
+}
+ol li, ul li {
+	font-size: 16pt;
+	text-align: justify;
+}
+figcaption {
+	font-size: 14pt;
+}
+td, th {
+        font-size: 16pt;
+}
+h1.chaptertitle {
+	font-size: 18pt;
+	font-weight: bold;
+}
+h1.chaptersubtitle {
+	font-size: 17pt;
+	font-weight: bold;
+}
+h1.head1 {
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+h2.head2 {
+        font-size: 16pt;
+        font-weight: bold;
+        font-variant: italic;
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+h3.head3 {
+        font-size: 16pt;
+        font-weight: normal;
+        font-variant: italic;
+        margin-top: 2em;
+        margin-bottom: 1em;
+}
+}
+
+@media (min-width: 996px){
+p {
+	font-size: 16pt;
+	text-align: justify;
+}
+p.caption {
+	font-size: 14pt;
+}
+.author, .editor {
+	font-size: 19pt;
+}
+.footnote > p {
+	font-size: 14pt;
+}
+ol li, ul li {
+	font-size: 16pt;
+	text-align: justify;
+}
+figcaption {
+	font-size: 14pt;
+}
+td, th {
+	font-size: 16pt;
+}
+h1.chaptertitle {
+	font-size: 20pt;
+	font-weight: bold;
+}
+h1.chaptersubtitle {
+	font-size: 19pt;
+	font-weight: bold;
+}
+h1.head1 {
+	font-size: 16pt;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+h2.head2 {
+	font-size: 16pt;
+	font-weight: bold;
+	font-variant: italic;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+h3.head3 {
+	font-size: 16pt;
+	font-weight: normal;
+	font-variant: italic;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+}
+
+.noindent {
+	text-indent: 0em;
+}
+
+.indent {
+	text-indent: 1em;
+}
+
+/* Styles */
+.hr {
+	color: red;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-variant: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.dropcaps {
+	float: left;
+	font-size: 4.9em;
+	line-height: 0.9em;
+	margin: 0 2px 0 0;
+	padding: 0 1px 0 0;
+}
+.large {
+	font-size: 200%;
+	font-weight: bold;
+	line-height: 0em;
+}
+.smallcaps {
+	font-variant: small-caps;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+
+/* Remove border from `.blockquote` element */
+blockquote {
+	border-left: none;
+}

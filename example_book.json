@@ -1,0 +1,17 @@
+{
+    "titleID" : "book-url",
+    "title" : "My Book",
+    "author" : "Jane Doe",
+    "chapters" : [
+        {
+            "chapTitle" : "Introduction",
+            "order" : 0,
+            "file" : "01_ch00"
+        },
+        {
+            "chapTitle" : "Chapter 1",
+            "order" : 1,
+            "file" : "02_ch01"
+        }
+    ]
+}

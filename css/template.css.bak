@@ -1,0 +1,367 @@
+/* template.css used by typesetters for base css */
+
+@charset "utf-8"; 
+
+body{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 4%;
+	margin-bottom: 0%;
+	font-family: Baskerville, "Baskerville Old Face", "Libre Baskerville", serif;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: 'kern=1';
+	-moz-font-feature-settings: 'kern' 1;
+	-webkit-font-feature-settings: 'kern' 1;
+	-o-font-feature-settings: 'kern' 1;
+	-ms-font-feature-settings: 'kern' 1;
+	font-feature-settings: 'kern' 1;
+
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: 'liga=1';
+	-moz-font-feature-settings: 'liga' 1;
+	-webkit-font-feature-settings: 'liga' 1;
+	-o-font-feature-settings: 'liga' 1;
+	-ms-font-feature-settings: 'liga' 1;
+	font-feature-settings: 'liga' 1;
+}
+
+p {
+	font-size: 24px;
+	text-align: justify;
+	margin-bottom: 1em;
+}
+
+/*
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 12pt;
+	height: 5%;
+	text-align: center;
+	border-bottom: 1px solid #F00;
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav ul {
+	height: auto;
+	padding: 8px 0px 0px 0px;
+	margin: 0px;
+}
+
+nav li {
+	display: inline;
+	text-align: center;
+}
+
+nav li#prev_btn {
+	margin-right: 25%;
+}
+
+nav li#toc_btn {
+	margin: 0;
+}
+
+nav li#next_btn {
+	margin-left: 25%;
+}
+*/
+/* Used for when there is no need of a button but need spacing */
+.blank_nav {
+	padding-left: 126px
+}
+
+.author
+{
+	margin: 10px 5.0em 12px 5.5em;
+	font-size: large;
+}
+.editor
+{
+	margin: 1px 5.0em 1px 5.5em;
+	font-size: large;
+}
+
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+/* Styles */
+.hr {
+	color: red;
+}
+.bold {
+	font-size: 12pt;
+}
+.italic {
+	font-size: 12pt;
+}
+.underline {
+	text-decoration: underline;
+}
+.dropcaps {
+	float: left;
+	font-size: 4.9em;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 0.9em;
+	margin: 0px 2px 0em 0em;
+	padding: 0 1px 0 0;
+}
+.large {
+	font-size: 200%;
+	font-weight: bold;
+	line-height: 0em;
+}
+.smallcaps {
+	font-variant: small-caps;
+}
+.right {
+	text-align: right;
+	font-size: 12pt;
+}
+.left {
+	text-align: left;
+	font-size: 12pt;
+}
+.center {
+	text-align: center;
+	font-size:12pt;
+}
+
+/* article */
+div.article {
+	margin: 0 auto auto auto;
+	padding: 0em 0em 3em 0em;
+}
+h1.chaptertitle {
+	font-size: 17pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	margin: 40px 0px 0px 4.5em;
+}
+h1.chaptersubtitle {
+	font-size: 15pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	margin: 10px 0px 0px 6.5em;
+}
+/*
+section > p
+{
+margin-top: 10px;
+margin-bottom: 0px;
+text-align: justify;
+}
+*/
+section > h1.head1 {
+	font-size: 14pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	margin: 20px 0px 10px 0px;
+}
+
+section > h2.head2 {
+	font-size: 13pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	margin: 10px 0px 0px 0px;
+}
+
+section > h3.h3.head3 {
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	margin: 10px 0px 0px 0px;
+}
+
+
+
+/* Images */
+p.caption {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 12pt;
+	text-align: left;
+	text-indent: 0px;
+	margin: 10px 0px 20px 0px;
+}
+
+/* Title Page */
+
+.pagebreak
+{
+page-break-before:always;
+}
+
+.refText
+{
+	font-size: 10pt;
+	text-align: justify;
+	font-weight: normal;
+	font-style: normal;
+	margin: 10px 0px 0px 2.5em;
+	text-indent: -2.5em;
+}
+
+.footnote {
+	font-size: 10pt;
+	text-align: justify;
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+.attribution {
+	text-align: right;
+	font-size: 12pt;
+
+}
+
+div.blockquote
+{
+margin-top:2em;
+margin-left:60pt;
+text-align:right;
+}
+
+div.block
+{
+margin-left:40pt;
+margin-right:40pt;
+font-size: 12pt;
+}
+
+div.sect1
+{
+font-size:12pt;
+margin-top:3em;
+margin-bottom:1em;
+
+}
+.hanglist
+{
+text-indent: -15px;
+margin-left: 15px;
+text-align: justify;
+}
+
+.note
+{
+text-indent: -15px;
+margin-left: 15px;
+text-align: justify;
+}
+
+.indent
+{
+text-indent: 2em;
+}
+
+.noindent
+{
+text-indent: 0em;
+}
+.abpara{
+font-size:12pt;
+margin: 10px 10px 10px 10px;
+
+}
+/*p
+{
+margin-top: 10px;
+margin-bottom: 0px;
+text-align: justify;
+line-height: 1.4;
+}
+*/
+li
+{
+font-size:12pt;
+margin-top: 10px;
+margin-bottom: 0px;
+text-align: justify;
+}
+
+/* Table */
+table {
+	border-collapse:collapse;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 10px;
+	width:100%;
+	font-size:12pt;
+}
+td {
+	padding: 2px 1px 2px 75px;
+}
+th {
+	padding: 2px 5px 2px 5px;
+}
+
+.border-bottom{
+	border-bottom: 1px solid black;
+}
+
+sup
+{
+font-size:9pt;
+}
+
+figure {
+  padding: 12px 0px 12px 0px;
+  font-size:10pt;
+  border: none;
+  background: transparent;
+  text-align: center;
+  line-height: 1.2;
+
+}
+
+#abst01{
+	border-bottom:solid 2px red;
+	border-top:solid 2px red;
+	margin: 50px 50px 50px 80px;
+
+}
+
+.partitle
+{
+	font-size: 16pt;
+	font-style: normal;
+	text-align: left;
+	margin: 40px 0px 0px 4.5em;
+	color: red;
+}
+
+.doi{
+font-size:9pt;
+	margin: 50px 50px 50px 80px;
+	border-bottom:solid 1px red;
+
+}
+
+.resume{
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	margin: 20px 0px 10px 0px;
+
+}
+.empty{
+	border-bottom:solid 2px red;
+	margin: 50px 50px 50px 80px;
+
+}
+
