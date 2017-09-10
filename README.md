@@ -11,7 +11,7 @@ Quick Guide
 
 To use viewbook, do the following:
 
-- Clone the repo: `hg clone https://bitbucket.org/mchladek/viewbook`
+- Clone the repo
 - Create a mongo database and collection
 - Edit the `config_example.php` file, inputting the details of your domain and
   mongo database details and save as `config.php`
